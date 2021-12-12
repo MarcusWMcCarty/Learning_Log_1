@@ -9,7 +9,7 @@
         {% for topic in topics %}
 
         <li>
-             {{ topic }}
+            <a href= "{% url 'MainApp:topic' topic.id %}">{{ topic }}</a>
         </li>
         {% empty %}
         <li>No topics have been added yet.</li>
